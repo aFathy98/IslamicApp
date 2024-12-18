@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamie/home_screen/home_page.dart';
+import 'package:islamie/my_theme_data.dart';
 
 void main (){
   runApp(const Islamic());
@@ -16,6 +17,8 @@ class Islamic extends StatelessWidget{
       routes: {
         HomePage.routeName: (context) => const HomePage(),
       },
+      darkTheme: MyThemeData.darkTheme,
+      themeMode: ThemeMode.dark,
     );
   }
 }
